@@ -20,7 +20,7 @@ GREEN = (0, 255, 0)
 YELLOW = (255, 255, 0)
 
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
-pygame.display.set_caption("Maze Explorer - Student Edition")
+pygame.display.set_caption("Maze Explorer - Hiba Edition")
 clock = pygame.time.Clock()
 
 # ==========================================
