@@ -13,14 +13,14 @@ FPS = 60
 
 # Colors (Students can change these!)
 BLACK = (0, 0, 0)
-WHITE = (255, 255, 255)
-BLUE = (0, 0, 255)
+WHITE = (255, 0, 255)
+BLUE = (0, 0, 180)
 RED = (255, 0, 0)
-GREEN = (0, 255, 0)
+GREEN = (0, 200, 0)
 YELLOW = (255, 255, 0)
 
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
-pygame.display.set_caption("Maze Explorer - Hiba Edition")
+pygame.display.set_caption("Maze Explorer - Student Edition")
 clock = pygame.time.Clock()
 
 # ==========================================
@@ -53,12 +53,9 @@ class Player(pygame.sprite.Sprite):
         # ==========================================
         # STUDENT TODO 1: PLAYER MOVEMENT
         # ==========================================
-        # Hint: If the left arrow key is pressed (pygame.K_LEFT),
+        # If the left arrow key is pressed (pygame.K_LEFT),
         # decrease self.rect.x by self.speed and set self.facing to "LEFT".
         # Do the same for RIGHT, UP, and DOWN!
-
-        # [WRITE YOUR MOVEMENT CODE HERE]
-
 
 
         # --- Wall Collision Logic (Provided so you don't get stuck!) ---
@@ -136,14 +133,14 @@ class Bullet(pygame.sprite.Sprite):
 # W = Wall, P = Player Start, E = Enemy, G = Goal, Space = Empty
 level_map = [
     "WWWWWWWWWWWWWWWWWWWW",
-    "WP       W         W",
-    "W        W    E    W",
-    "W   WWWWWW         W",
-    "W        W    WWWWWW",
-    "W  E               W",
+    "WP                 W",
     "W        W         W",
-    "W  WWWWWWWWWWWW    W",
-    "W             E    W",
+    "W   WWWWWWWWWWWW   W",
+    "W        W    E    W",
+    "W  E               W",
+    "W        W   WWWWWWW",
+    "W   WWWWWW         W",
+    "W      E      E    W",
     "W        W         W",
     "W        W         G",
     "WWWWWWWWWWWWWWWWWWWW",
